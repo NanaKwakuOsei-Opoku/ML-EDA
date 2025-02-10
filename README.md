@@ -64,17 +64,8 @@ This dataset analyzes dating app preferences and usage patterns among Gen-Z user
    - Scaled numerical features
 
 ## Ethical Considerations
-1. Gender Representation
-   - Balanced representation across gender categories
-   - Inclusive of non-binary users
-
-2. Geographic Diversity
-   - Coverage across major Indian cities
-   - Notable metro vs non-metro divide needs consideration
-
-3. Privacy Considerations
-   - No personally identifiable information included
-   - Aggregate data used for analysis
+1. Bias in data collection: Overrepresentation of certain groups may lead to skewed results.
+2. Ensure diverse demographic representation to avoid limiting the generalizability of the findings.
 
 ## Recommendations for Future Analysis
 1. Include more non-metro cities for better geographic representation
