@@ -92,9 +92,9 @@ This dataset analyzes dating app preferences and usage patterns among Gen-Z user
 - Version Control: GitHub
 
 ## Contributors
-- Initial Data Collection: [Team Name]
-- Analysis: [Student Name]
-- Documentation: [Student Name]
+- Initial Data Collection: [Jeremiah Ishaya]
+- Analysis: [Nana Kwaku Osei-Opoku]
+- Documentation: [Nana Kwaku Osei-Opoku]
 
 ## Version History
 - v1.0: Initial data cleaning and analysis
