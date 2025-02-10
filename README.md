@@ -64,17 +64,8 @@ This dataset analyzes dating app preferences and usage patterns among Gen-Z user
    - Scaled numerical features
 
 ## Ethical Considerations
-1. Gender Representation
-   - Balanced representation across gender categories
-   - Inclusive of non-binary users
-
-2. Geographic Diversity
-   - Coverage across major Indian cities
-   - Notable metro vs non-metro divide needs consideration
-
-3. Privacy Considerations
-   - No personally identifiable information included
-   - Aggregate data used for analysis
+1. Bias in data collection: Overrepresentation of certain groups may lead to skewed results.
+2. Ensure diverse demographic representation to avoid limiting the generalizability of the findings.
 
 ## Recommendations for Future Analysis
 1. Include more non-metro cities for better geographic representation
@@ -99,28 +90,29 @@ This dataset analyzes dating app preferences and usage patterns among Gen-Z user
 - v1.2: Updated documentation and insights
 
 ## Data Dictionary
+| Column Name | Data Type | Description |
+|------------|-----------|-------------|
+| Gender | Categorical | User's gender identity |
+| Age | Numerical | User's age |
+| Location | Categorical | City of residence |
+| Education | Categorical | Highest education level |
+| Occupation | Categorical | Primary work/study status |
+| Primary_App | Categorical | Main dating app used |
+| Secondary_Apps | Categorical | Additional dating apps used |
+| Usage_Frequency | Categorical | How often the app is used |
+| Daily_Usage_Time | Categorical | Time spent on dating apps daily |
+| Reason_for_Using | Categorical | Motivation for using dating apps |
+| Challenges | Categorical | Difficulties encountered on dating apps |
+| Desired_Features | Categorical | Features users want to see |
+| Preferred_Communication | Categorical | Preferred communication method |
+| Partner_Priorities | Categorical | What users value most in a partner |
+| Active_App_Count | Numerical | Number of active dating apps |
+| Gender_Encoded | Numerical | Encoded gender for ML models |
+| Location_Type_Encoded | Numerical | Encoded location type |
+| Scaled_Age | Numerical | Standardized age values |
+| Scaled_Satisfaction | Numerical | Standardized satisfaction scores |  
 
-| Column Name | Data Type | Description | Notes |
-|------------|-----------|-------------|-------|
-| Gender | Categorical | User's gender identity | Reflects diverse gender identities in the dataset |
-| Age | Numerical | User's age | Focuses on Gen-Z age range (18-25) |
-| Location | Categorical | City of residence | Represents major Indian cities |
-| Education | Categorical | Highest education level | Captures current educational status |
-| Occupation | Categorical | Primary work/study status | Reflects professional diversity of users |
-| Primary_App | Categorical | Main dating app used | Indicates primary platform preference |
-| Secondary_Apps | Categorical | Additional dating apps used | Captures multi-app usage behavior |
-| Usage_Frequency | Categorical | How often the app is used | Measures engagement level |
-| Daily_Usage_Time | Categorical | Time spent on dating apps daily | Quantifies app interaction duration |
-| Reason_for_Using | Categorical | Motivation for using dating apps | Reveals user intentions and expectations |
-| Challenges | Categorical | Difficulties encountered on dating apps | Highlights pain points in user experience |
-| Desired_Features | Categorical | Features users want to see | Provides product improvement suggestions |
-| Preferred_Communication | Categorical | Preferred communication method | Indicates communication preferences |
-| Partner_Priorities | Categorical | What users value most in a partner | Reflects relationship value hierarchy |
-| Active_App_Count | Numerical | Number of active dating apps | Engineered feature showing app diversity |
-| Gender_Encoded | Numerical | Encoded gender for ML models | Prepared for machine learning preprocessing |
-| Location_Type_Encoded | Numerical | Encoded location type | Binary encoding for location |
-| Scaled_Age | Numerical | Standardized age values | Normalized for modeling purposes |
-| Scaled_Satisfaction | Numerical | Standardized satisfaction scores | Normalized metric for analysis |
+Let me know if you need any further modifications! 🚀
 
 ## Data Cleaning Process
 Based on the task document requirements, we undertook the following data cleaning steps:
