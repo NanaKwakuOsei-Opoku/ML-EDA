@@ -100,26 +100,64 @@ This dataset analyzes dating app preferences and usage patterns among Gen-Z user
 
 ## Data Dictionary
 
-| Column Name | Data Type | Description | Possible Values/Examples | Notes |
-|------------|-----------|-------------|--------------------------|-------|
-| Gender | Categorical | User's gender identity | "female", "male", "non-binary" | Inclusive of multiple gender identities |
-| Age | Numerical | User's age | 18-25 | Gen-Z age range |
-| Location | Categorical | City of residence | "Mumbai", "Delhi", "Bangalore", etc. | Major Indian cities |
-| Education | Categorical | Highest education level | "Undergraduate", "Graduate", "Postgraduate" | Current educational status |
-| Occupation | Categorical | Primary work/study status | "Student", "Intern", "Freelancer", "Full-time Job", "Part-time Job" | Reflects professional diversity |
-| Primary_App | Categorical | Main dating app used | "OkCupid", "Hinge", "Bumble", "Tinder", "None" | Primary platform preference |
-| Secondary_Apps | Categorical | Additional dating apps used | "Hinge", "OkCupid", "Bumble", "Tinder", "None" | Multiple app usage |
-| Usage_Frequency | Categorical | How often the app is used | "Daily", "Weekly", "Monthly" | Engagement level |
-| Daily_Usage_Time | Categorical | Time spent on dating apps daily | "30 minutes", "1 hour", "1.5 hours", "2 hours", "3 hours" | App usage duration |
-| Reason_for_Using | Categorical | Motivation for using dating apps | "Casual Dating", "Finding a Partner", "Casual Fun", "Social Interaction" | User intentions |
-| Challenges | Categorical | Difficulties encountered | "Lack of Genuine Matches", "Time-Wasting", "Safety Concerns", "None" | Pain points in dating apps |
-| Desired_Features | Categorical | Features users want to see | "Location-Based Matching", "Video Calls", "Detailed Profiles", "Audio Calls", "AI Recommendations" | Product improvement suggestions |
-| Preferred_Communication | Categorical | Preferred communication method | "Video Calls", "Voice Notes", "Text" | Communication preferences |
-| Partner_Priorities | Categorical | What users value most in a partner | "Personality > Interests > Values", "Values > Personality > Appearance", "Appearance > Interests > Personality" | Relationship value hierarchy |
-| Active_App_Count | Numerical | Number of active dating apps | 0-3 | Engineered feature showing app diversity |
-| Gender_Encoded | Numerical | Encoded gender for ML models | 0, 1, 2 | One-hot or label encoded gender |
-| Location_Type_Encoded | Numerical | Encoded location type | 0 (Non-Metro), 1 (Metro) | Binary location encoding |
-| Scaled_Age | Numerical | Standardized age values | Typically between -3 and 3 | Normalized age for modeling |
-| Scaled_Satisfaction | Numerical | Standardized satisfaction scores | Typically between -3 and 3 | Normalized satisfaction metric |
+| Column Name | Data Type | Description | Notes |
+|------------|-----------|-------------|-------|
+| Gender | Categorical | User's gender identity | Reflects diverse gender identities in the dataset |
+| Age | Numerical | User's age | Focuses on Gen-Z age range (18-25) |
+| Location | Categorical | City of residence | Represents major Indian cities |
+| Education | Categorical | Highest education level | Captures current educational status |
+| Occupation | Categorical | Primary work/study status | Reflects professional diversity of users |
+| Primary_App | Categorical | Main dating app used | Indicates primary platform preference |
+| Secondary_Apps | Categorical | Additional dating apps used | Captures multi-app usage behavior |
+| Usage_Frequency | Categorical | How often the app is used | Measures engagement level |
+| Daily_Usage_Time | Categorical | Time spent on dating apps daily | Quantifies app interaction duration |
+| Reason_for_Using | Categorical | Motivation for using dating apps | Reveals user intentions and expectations |
+| Challenges | Categorical | Difficulties encountered on dating apps | Highlights pain points in user experience |
+| Desired_Features | Categorical | Features users want to see | Provides product improvement suggestions |
+| Preferred_Communication | Categorical | Preferred communication method | Indicates communication preferences |
+| Partner_Priorities | Categorical | What users value most in a partner | Reflects relationship value hierarchy |
+| Active_App_Count | Numerical | Number of active dating apps | Engineered feature showing app diversity |
+| Gender_Encoded | Numerical | Encoded gender for ML models | Prepared for machine learning preprocessing |
+| Location_Type_Encoded | Numerical | Encoded location type | Binary encoding for location |
+| Scaled_Age | Numerical | Standardized age values | Normalized for modeling purposes |
+| Scaled_Satisfaction | Numerical | Standardized satisfaction scores | Normalized metric for analysis |
+
+## Data Cleaning Process
+Based on the task document requirements, we undertook the following data cleaning steps:
+
+1. Duplicate Check
+   - Verified and removed any duplicate rows
+   - Ensured unique entries in the dataset
+
+2. Missing Value Handling
+   - Identified columns with missing values
+   - Strategically decided to:
+     * Flag missing values
+     * Investigate reasons for missingness
+     * Considered appropriate imputation or removal methods
+
+3. Categorical Value Standardization
+   - Normalized categorical variables
+   - Ensured consistency in:
+     * Case sensitivity
+     * Spelling variations
+     * Uniform representation of categories
+
+4. Outlier Detection and Handling
+   - Used box plots and Interquartile Range (IQR) method
+   - Analyzed numerical columns for potential outliers
+   - Made informed decisions about outlier treatment
+
+## Ethical Considerations
+- Ensured balanced representation across demographic groups
+- Identified potential biases in data collection
+- Maintained privacy and anonymity of data sources
+- Critically evaluated the dataset's generalizability
+
+## Recommendations for Future Analysis
+1. Expand data collection to include more diverse geographic regions
+2. Investigate reasons for missing data
+3. Conduct deeper bias analysis
+4. Develop more sophisticated feature engineering techniques
 
 _Last Updated: February 10, 2025_
