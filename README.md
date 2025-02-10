@@ -1,6 +1,3 @@
-# ML-EDA
-Exploratory data analysis performed on India's Generation Z population online dating habits
-
 # Gen-Z Dating App Usage Analysis in India
 
 ## Dataset Overview
@@ -92,13 +89,37 @@ This dataset analyzes dating app preferences and usage patterns among Gen-Z user
 - Version Control: GitHub
 
 ## Contributors
-- Initial Data Collection: [Jeremiah Ishaya]
-- Analysis: [Nana Kwaku Osei-Opoku]
-- Documentation: [Nana Kwaku Osei-Opoku]
+- Initial Data Collection: [Team Name]
+- Analysis: [Student Name]
+- Documentation: [Student Name]
 
 ## Version History
 - v1.0: Initial data cleaning and analysis
 - v1.1: Added feature engineering
 - v1.2: Updated documentation and insights
+
+## Data Dictionary
+
+| Column Name | Data Type | Description | Possible Values/Examples | Notes |
+|------------|-----------|-------------|--------------------------|-------|
+| Gender | Categorical | User's gender identity | "female", "male", "non-binary" | Inclusive of multiple gender identities |
+| Age | Numerical | User's age | 18-25 | Gen-Z age range |
+| Location | Categorical | City of residence | "Mumbai", "Delhi", "Bangalore", etc. | Major Indian cities |
+| Education | Categorical | Highest education level | "Undergraduate", "Graduate", "Postgraduate" | Current educational status |
+| Occupation | Categorical | Primary work/study status | "Student", "Intern", "Freelancer", "Full-time Job", "Part-time Job" | Reflects professional diversity |
+| Primary_App | Categorical | Main dating app used | "OkCupid", "Hinge", "Bumble", "Tinder", "None" | Primary platform preference |
+| Secondary_Apps | Categorical | Additional dating apps used | "Hinge", "OkCupid", "Bumble", "Tinder", "None" | Multiple app usage |
+| Usage_Frequency | Categorical | How often the app is used | "Daily", "Weekly", "Monthly" | Engagement level |
+| Daily_Usage_Time | Categorical | Time spent on dating apps daily | "30 minutes", "1 hour", "1.5 hours", "2 hours", "3 hours" | App usage duration |
+| Reason_for_Using | Categorical | Motivation for using dating apps | "Casual Dating", "Finding a Partner", "Casual Fun", "Social Interaction" | User intentions |
+| Challenges | Categorical | Difficulties encountered | "Lack of Genuine Matches", "Time-Wasting", "Safety Concerns", "None" | Pain points in dating apps |
+| Desired_Features | Categorical | Features users want to see | "Location-Based Matching", "Video Calls", "Detailed Profiles", "Audio Calls", "AI Recommendations" | Product improvement suggestions |
+| Preferred_Communication | Categorical | Preferred communication method | "Video Calls", "Voice Notes", "Text" | Communication preferences |
+| Partner_Priorities | Categorical | What users value most in a partner | "Personality > Interests > Values", "Values > Personality > Appearance", "Appearance > Interests > Personality" | Relationship value hierarchy |
+| Active_App_Count | Numerical | Number of active dating apps | 0-3 | Engineered feature showing app diversity |
+| Gender_Encoded | Numerical | Encoded gender for ML models | 0, 1, 2 | One-hot or label encoded gender |
+| Location_Type_Encoded | Numerical | Encoded location type | 0 (Non-Metro), 1 (Metro) | Binary location encoding |
+| Scaled_Age | Numerical | Standardized age values | Typically between -3 and 3 | Normalized age for modeling |
+| Scaled_Satisfaction | Numerical | Standardized satisfaction scores | Typically between -3 and 3 | Normalized satisfaction metric |
 
 _Last Updated: February 10, 2025_
